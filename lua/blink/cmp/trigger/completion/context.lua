@@ -11,7 +11,7 @@ function context.new(opts)
 
   local self = setmetatable({}, { __index = context })
   self.id = opts.id
-  self.mode = opts.mode or 'buffer'
+  self.mode = opts.mode or 'editor'
   self.buf = vim.api.nvim_get_current_buf()
   self.cursor = opts.mode == 'cmdline' and { 1, vim.fn.getcmdpos() } or vim.api.nvim_win_get_cursor(0)
   self.line = opts.mode == 'cmdline' and (vim.fn.getcmdtype() .. vim.fn.getcmdline())

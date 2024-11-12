@@ -1,4 +1,4 @@
---- @alias blink.cmp.Mode 'cmdline' | 'buffer'
+--- @alias blink.cmp.Mode 'cmdline' | 'editor' | 'terminal'
 
 --- @class blink.cmp.ContextBounds
 --- @field line string
