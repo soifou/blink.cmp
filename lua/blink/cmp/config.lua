@@ -341,7 +341,7 @@ local config = {
 
   sources = {
     -- list of enabled providers
-    buffer = {
+    editor = {
       enabled_providers = { 'lsp', 'path', 'snippets', 'buffer' },
     },
     cmdline = {
